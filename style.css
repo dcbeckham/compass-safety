@@ -1,6 +1,15 @@
 /* ---------- General Styles ---------- */
+:root {
+  --primary: #0b5ed7;   /* Trustworthy blue */
+  --secondary: #198754; /* Safety green */
+  --background: #f5f7f8; /* Light neutral background */
+  --text-color: #333;    /* Main text color */
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  background: var(--background);
+  color: var(--text-color);
 }
 
 h1, h2, h3 {
@@ -9,7 +18,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #0b5ed7;
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -19,7 +28,7 @@ a:hover {
 
 /* ---------- Header ---------- */
 header {
-  background: #0b5ed7;
+  background: var(--primary);
   color: white;
   text-align: center;
   padding: 40px 20px;
@@ -37,7 +46,7 @@ header p {
 
 /* ---------- Navigation ---------- */
 nav {
-  background: #198754;
+  background: var(--secondary);
   text-align: center;
   padding: 15px 0;
   flex-wrap: wrap;
@@ -55,7 +64,7 @@ nav a {
 .hero {
   text-align: center;
   padding: 50px 20px;
-  background: #e9f2f7;
+  background: var(--background);
 }
 
 .hero h2 {
@@ -72,7 +81,7 @@ nav a {
   display: inline-block;
   margin: 5px 10px;
   padding: 12px 25px;
-  background: #0b5ed7;
+  background: var(--primary);
   color: white;
   font-weight: bold;
   border-radius: 5px;
@@ -80,7 +89,7 @@ nav a {
 }
 
 .hero .btn:hover {
-  background: #084298;
+  background: #084298; /* Keep hover slightly darker manually */
 }
 
 /* ---------- Section Cards (Overview) ---------- */
@@ -133,7 +142,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background: #0b5ed7;
+  background: var(--primary);
   color: white;
   border: none;
   padding: 12px 20px;
@@ -148,7 +157,7 @@ input[type="submit"]:hover {
 
 /* ---------- Footer ---------- */
 footer {
-  background: #0b5ed7;
+  background: var(--primary);
   color: white;
   text-align: center;
   padding: 20px 10px;
@@ -202,4 +211,3 @@ footer {
     padding: 10px 20px;
   }
 }
-
