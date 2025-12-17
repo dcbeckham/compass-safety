@@ -62,25 +62,31 @@ nav a {
 
 /* ---------- Hero Section ---------- */
 .hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero.jpg') center/cover no-repeat;
+  color: white;
   text-align: center;
-  padding: 50px 20px;
-  background: var(--background);
+  padding: 100px 20px;
 }
 
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.hero p {
-  font-size: 1.1rem;
+.hero h1 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.hero .btn {
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-buttons .btn {
   display: inline-block;
   margin: 5px 10px;
-  padding: 12px 25px;
+  padding: 15px 30px;
   background: var(--primary);
   color: white;
   font-weight: bold;
@@ -88,8 +94,8 @@ nav a {
   transition: background 0.3s;
 }
 
-.hero .btn:hover {
-  background: #084298; /* Keep hover slightly darker manually */
+.hero-buttons .btn:hover {
+  background: #084298;
 }
 
 /* ---------- Section Cards (Overview) ---------- */
@@ -211,3 +217,4 @@ footer {
     padding: 10px 20px;
   }
 }
+
